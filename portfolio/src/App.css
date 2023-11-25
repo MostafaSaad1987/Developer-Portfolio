@@ -29,10 +29,10 @@ header {
 }
 
 .skill {
-  background-color: antiquewhite;
+  background-color: #fff7ed;
   width: 175px;
   border-radius: 10%;
-  padding: 5px;
+  padding: 25px 5px;
 }
 
 .skill-image {
@@ -45,6 +45,9 @@ header {
   font-weight: 500;
   margin: 0;
   margin-bottom: 2px;
+
+  position: absolute;
+  opacity: 0;
 }
 
 .skill:hover {
@@ -56,6 +59,11 @@ header {
 }
 
 .skill:hover .skill-name {
+  opacity: 100%;
   color: white;
   transform: translateY(100%);
+}
+
+.skills-sub {
+  grid-column: 1 / -1;
 }
