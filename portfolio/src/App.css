@@ -40,15 +40,15 @@ header>h2 {
   width: 80vw;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-  gap: 25px 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
   justify-items: center;
 }
 
 .skill {
   background-color: #fff7ed;
   width: 100px;
-  border-radius: 10%;
+  border-radius: 25%;
   padding: 25px 5px;
 }
 
@@ -68,12 +68,6 @@ header>h2 {
   user-select: none;
 }
 
-.skill-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 
 .skill:hover {
   background-color: black;
@@ -91,6 +85,19 @@ header>h2 {
 
 .skills-sub {
   grid-column: 1 / -1;
+}
+
+
+@media screen and (max-width: 600px) {
+  .skill-name {
+    font-size: 1rem;
+    position: initial;
+    opacity: 100;
+  }
+
+  .skill {
+    padding: 0;
+  }
 }
 
 @keyframes slideDown {
