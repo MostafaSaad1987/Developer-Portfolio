@@ -15,6 +15,10 @@ const skills = [
         icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
     }, {
         name: "React",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    },
+    {
+        name: "JSX",
         icon: "https://cdn-icons-png.flaticon.com/512/1260/1260667.png",
     },
     {
@@ -42,10 +46,6 @@ const skills = [
         icon: "https://cdn-icons-png.flaticon.com/512/2111/2111432.png",
     },
     {
-        name: "Sass",
-        icon: "https://cdn-icons-png.flaticon.com/512/5968/5968358.png",
-    },
-    {
         name: "Express",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-express-8-1175029.png",
     },
@@ -58,16 +58,16 @@ const skills = [
         icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png",
     },
     {
-        name: "JSX",
-        icon: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
-    },
-    {
         name: "REST API",
         icon: "https://cdn-icons-png.flaticon.com/512/1493/1493169.png",
     },
     {
         name: "Bootstrap",
         icon: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+    },
+    {
+        name: "Sass",
+        icon: "https://cdn-icons-png.flaticon.com/512/5968/5968358.png",
     },
     {
         name: "Jest",

@@ -19,36 +19,61 @@ header {
   color: black;
 }
 
+header>h1 {
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideDown;
+}
+
+header>h2 {
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideDown;
+}
+
+
 .skills {
   width: 80vw;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-  gap: 25px;
+  gap: 25px 0;
   justify-items: center;
 }
 
 .skill {
   background-color: #fff7ed;
-  width: 175px;
+  width: 100px;
   border-radius: 10%;
   padding: 25px 5px;
 }
 
 .skill-image {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .skill-name {
-  font-size: 2rem;
+  font-size: 1vw;
   font-weight: 500;
   margin: 0;
   margin-bottom: 2px;
 
   position: absolute;
   opacity: 0;
+  user-select: none;
 }
+
+.skill-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 
 .skill:hover {
   background-color: black;
@@ -66,4 +91,16 @@ header {
 
 .skills-sub {
   grid-column: 1 / -1;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateY(0);
+  }
 }
