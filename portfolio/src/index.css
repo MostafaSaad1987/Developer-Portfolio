@@ -11,13 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  margin: 0 auto;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +24,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  height: 100vh;
 }
 
 h1,
