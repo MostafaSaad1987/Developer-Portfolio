@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+
 import Skill from "./skill";
 
 const skills = [
@@ -86,16 +87,15 @@ const skills = [
         icon: "https://vitejs.dev/logo-with-shadow.png",
     },
 ];
-
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
     return (
-        <>
-            <div className="skills">
+        <div className="skills-container">
+            <div className="skills" ref={ref}>
                 <h2 className="skills-sub">Skills</h2>
                 {skills.map((d) => (<Skill key={d.name} name={d.name} icon={d.icon} />))}
             </div>
-        </>
+        </div>
     );
-};
+});
 
 export default Skills;

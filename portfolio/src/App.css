@@ -9,15 +9,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding-bottom: 10px;
 }
 
 #root>* {
   margin: auto;
 }
 
-header {
+header,
+.skills-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,9 @@ header {
 }
 
 header>h1 {
-  padding-top: 50%;
+  padding-top: 45%;
+
+  margin-bottom: 0;
 
   animation-duration: 0.75s;
   animation-timing-function: ease-out;
