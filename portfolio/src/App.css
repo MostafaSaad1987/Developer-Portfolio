@@ -16,7 +16,9 @@
 }
 
 header,
-.skills-container {
+.skills-container,
+.projects,
+.contact {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -50,14 +52,12 @@ header>h2 {
 
 .move {
   width: 100vw;
-  background-color: red;
+  background-color: #3d3d3d;
   position: absolute;
-  bottom: 0;
-}
-
-.move:hover {
-  background-color: rgb(255, 77, 77);
-  cursor: pointer;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .skills {
@@ -119,6 +119,10 @@ header>h2 {
 
   .skill {
     padding: 0;
+  }
+
+  .move {
+    display: none;
   }
 }
 
