@@ -45,5 +45,8 @@ module.exports = {
         "jsx-a11y/no-static-element-interactions": 0,
         "jsx-a11y/anchor-is-valid": 0,
         "import/no-named-as-default": 0,
+        "max-len": 0,
+        "import/no-unresolved": 0,
+        "object-curly-newline": 0,
     },
 };
