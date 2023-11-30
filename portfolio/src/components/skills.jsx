@@ -89,8 +89,8 @@ const skills = [
 ];
 const Skills = React.forwardRef((props, ref) => {
     return (
-        <div className="skills-container">
-            <div className="skills" ref={ref}>
+        <div className="skills-container" ref={ref}>
+            <div className="skills">
                 <h2 className="skills-sub">Skills</h2>
                 {skills.map((d) => (<Skill key={d.name} name={d.name} icon={d.icon} />))}
             </div>

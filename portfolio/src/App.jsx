@@ -14,13 +14,13 @@ const App = () => {
     const homeRef = useRef(null);
 
     return (
-        <div>
+        <>
             <Header ref={homeRef} />
             <Skills ref={skillsRef} />
             <Projects ref={projectsRef} />
             <Contact ref={contactRef} />
             <Nav skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} homeRef={homeRef} />
-        </div>
+        </>
     );
 };
 
