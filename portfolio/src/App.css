@@ -176,6 +176,7 @@ header>h6 {
   width: 80%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .projects-buttons>button,
@@ -210,6 +211,10 @@ header>h6 {
 
   .skill {
     padding: 0;
+  }
+
+  .project-image {
+    display: none;
   }
 }
 
