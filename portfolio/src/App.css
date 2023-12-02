@@ -158,8 +158,47 @@ header>h6 {
   border-top-right-radius: 0;
 }
 
+.project-image {
+  object-fit: contain;
+  width: 50%;
+  border: 0.5rem solid black;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-buttons,
+.project-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects-buttons>button,
+.project-links>a {
+  border-radius: 5%;
+}
+
+.project-text {
+  font-size: 1.25rem;
+}
+
+.project-skills {
+  font-weight: 800;
+}
+
 .contact-info>a:hover {
-  scale: 110%;
+  border-radius: 10%;
+  color: white;
+  background-color: black;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
