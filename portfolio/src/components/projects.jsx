@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Projects = React.forwardRef((props, ref) => {
+const Projects = ["h"];
+
+const Project = React.forwardRef((props, ref) => {
+    const [currentProject, setProjectState] = useState(Projects[0]);
     return (
         <div className="projects" ref={ref}>
-            Test
+            {currentProject}
         </div>
     );
 });
 
-export default Projects;
+export default Project;

@@ -31,12 +31,12 @@ const skills = [
         icon: "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
     },
     {
-        name: "Webpack",
-        icon: "https://cdn.iconscout.com/icon/free/png-512/free-webpack-3-1174982.png",
-    },
-    {
         name: "NPM",
         icon: "https://cdn-icons-png.flaticon.com/512/11337/11337395.png",
+    },
+    {
+        name: "Webpack",
+        icon: "https://cdn.iconscout.com/icon/free/png-512/free-webpack-3-1174982.png",
     },
     {
         name: "Git",
@@ -51,12 +51,16 @@ const skills = [
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-express-8-1175029.png",
     },
     {
-        name: "Axios",
-        icon: "https://axios-http.com/assets/logo.svg",
+        name: "MongoDB",
+        icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-4-1175139.png",
     },
     {
-        name: "Linux",
-        icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png",
+        name: "Mongoose",
+        icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-2-1175137.png",
+    },
+    {
+        name: "Axios",
+        icon: "https://axios-http.com/assets/logo.svg",
     },
     {
         name: "REST API",
@@ -75,16 +79,12 @@ const skills = [
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-jest-3521517-2945020.png",
     },
     {
-        name: "MongoDB",
-        icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-4-1175139.png",
-    },
-    {
-        name: "Mongoose",
-        icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-2-1175137.png",
-    },
-    {
         name: "Vite",
         icon: "https://vitejs.dev/logo-with-shadow.png",
+    },
+    {
+        name: "Linux",
+        icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png",
     },
 ];
 const Skills = React.forwardRef((props, ref) => {

@@ -3,7 +3,7 @@ import "./App.css";
 
 import Header from "./components/header";
 import Skills from "./components/skills";
-import Projects from "./components/projects";
+import Project from "./components/projects";
 import Contact from "./components/contact";
 import Nav from "./components/nav";
 
@@ -17,7 +17,7 @@ const App = () => {
         <>
             <Header ref={homeRef} />
             <Skills ref={skillsRef} />
-            <Projects ref={projectsRef} />
+            <Project ref={projectsRef} />
             <Contact ref={contactRef} />
             <Nav skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} homeRef={homeRef} />
         </>

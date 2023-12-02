@@ -28,8 +28,6 @@ header,
 }
 
 header>h1 {
-  padding-top: 45%;
-
   margin-bottom: 0;
 
   animation-duration: 0.75s;
@@ -40,9 +38,17 @@ header>h1 {
 }
 
 header>h2 {
-  padding-bottom: 50%;
-
   animation-duration: 1.25s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideDown;
+}
+
+header>h6 {
+  margin-top: 0;
+
+  animation-duration: 2.5s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -137,17 +143,17 @@ header>h2 {
 }
 
 .contact-info>:first-child {
-  border-radius: 0 50px;
+  border-radius: 25px 25px;
   border-top-left-radius: 0;
 }
 
 .contact-info>:last-child {
-  border-radius: 50px 0;
+  border-radius: 25px 0 25px 25px;
   border-top-right-radius: 0;
 }
 
 .contact-info>a:hover {
-  scale: 125%;
+  scale: 110%;
 }
 
 @media screen and (max-width: 600px) {
