@@ -9,16 +9,16 @@ const Projects = [
         skills: "HTML, CSS, JS, Webpack",
         "project-name": "Restaurant Page",
         "project-live": "odin-restaurant-page/",
-        "project-preview": "./public/Restaurant.png",
-        "project-preview-mobile": "public/Restaurant_m.png",
+        "project-preview": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/Restaurant.png",
+        "project-preview-mobile": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/Restaurant_m.jpg",
     },
     {
         text: "A website to track all the shows that you watch. (Or at least the ones that are available TVMaze.)",
         skills: "HTML, CSS, JS, Axios",
         "project-name": "TV Shows Library/Tracker",
         "project-live": "TV-Show-Library/",
-        "project-preview": "public/TVTracker.png",
-        "project-preview-mobile": "public/TVTracker_m.jpg",
+        "project-preview": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/TVTracker.png",
+        "project-preview-mobile": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/TVTracker_m.jpg",
     },
 ];
 
