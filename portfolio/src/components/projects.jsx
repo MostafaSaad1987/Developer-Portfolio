@@ -10,23 +10,15 @@ const Projects = [
         "project-name": "Restaurant Page",
         "project-live": "odin-restaurant-page/",
         "project-preview": "../src/assets/screenshots/Restaurant.png",
-        "project-preview-mobile": "",
-    },
-    {
-        text: "Tic Tac Toe made with HTML, CSS, JavaScript.",
-        skills: "HTML, CSS, JS",
-        "project-name": "Tic Tac Toe",
-        "project-live": "odin-tic-tac-toe/",
-        "project-preview": "../src/assets/screenshots/TicTacToe.png",
-        "project-preview-mobile": "",
+        "project-preview-mobile": "../src/assets/screenshots/Restaurant_m.jpg",
     },
     {
         text: "A website to track all the shows that you watch. (Or at least the ones that are available TVMaze.)",
         skills: "HTML, CSS, JS, Axios",
         "project-name": "TV Shows Library/Tracker",
         "project-live": "TV-Show-Library/",
-        "project-preview": "../src/assets/screenshots/TVTraker.png",
-        "project-preview-mobile": "",
+        "project-preview": "../src/assets/screenshots/TVTracker.png",
+        "project-preview-mobile": "../src/assets/screenshots/TVTracker_m.jpg",
     },
 ];
 
@@ -34,11 +26,6 @@ const Project = React.forwardRef((props, ref) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentProject, setProjectState] = useState(Projects[currentIndex]);
     const [projectClass, setProjectClass] = useState("");
-
-    useEffect(() => {
-        console.log("Current project: ", currentProject);
-        console.log("Current index: ", currentIndex);
-    }, [currentIndex]);
 
     const handleClick = (event) => {
         setProjectClass("hidden");

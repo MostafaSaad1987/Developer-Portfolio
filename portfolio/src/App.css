@@ -179,6 +179,10 @@ header>h6 {
   align-items: center;
 }
 
+.projects-buttons {
+  margin-top: 2%;
+}
+
 .projects-buttons>button,
 .project-links>a {
   border-radius: 5%;
@@ -190,6 +194,15 @@ header>h6 {
 
 .project-skills {
   font-weight: 800;
+}
+
+.project-mobile-image {
+  width: 125px;
+  position: absolute;
+  right: 26%;
+  bottom: 10%;
+  border-radius: 4%;
+  border: 2px solid black;
 }
 
 .contact-info>a:hover {
@@ -215,6 +228,16 @@ header>h6 {
 
   .project-image {
     display: none;
+  }
+
+  .project-mobile-image {
+    position: initial;
+  }
+
+  header,
+  .skills-container,
+  .projects {
+    height: auto;
   }
 }
 
