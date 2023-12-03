@@ -60,8 +60,8 @@ const Project = React.forwardRef((props, ref) => {
                 </div>
                 <p className="project-text">{currentProject.text}</p>
                 <p className="project-skills">{currentProject.skills}</p>
-                <img className="project-image" src={currentProject["project-preview"]} alt="Project Preview" />
-                <img className="project-mobile-image" src={currentProject["project-preview-mobile"]} alt="Project Preview" />
+                <img className="project-image" src={projectClass === "hidden" ? "" : currentProject["project-preview"]} alt="Project Preview" />
+                <img className="project-mobile-image" src={projectClass === "hidden" ? "" : currentProject["project-preview-mobile"]} alt="Project Preview" />
             </div>
             <div className="projects-buttons">
                 <button onClick={handleBackClick}>Previous Project</button>
