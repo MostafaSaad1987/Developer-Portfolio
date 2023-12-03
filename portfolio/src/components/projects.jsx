@@ -9,7 +9,7 @@ const Projects = [
         skills: "HTML, CSS, JS, Webpack",
         "project-name": "Restaurant Page",
         "project-live": "odin-restaurant-page/",
-        "project-preview": "public/Restaurant.png",
+        "project-preview": "./public/Restaurant.png",
         "project-preview-mobile": "public/Restaurant_m.png",
     },
     {
