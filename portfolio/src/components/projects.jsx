@@ -9,16 +9,16 @@ const Projects = [
         skills: "HTML, CSS, JS, Webpack",
         "project-name": "Restaurant Page",
         "project-live": "odin-restaurant-page/",
-        "project-preview": "../src/assets/screenshots/Restaurant.png",
-        "project-preview-mobile": "../src/assets/screenshots/Restaurant_m.jpg",
+        "project-preview": "public/Restaurant.png",
+        "project-preview-mobile": "public/Restaurant_m.png",
     },
     {
         text: "A website to track all the shows that you watch. (Or at least the ones that are available TVMaze.)",
         skills: "HTML, CSS, JS, Axios",
         "project-name": "TV Shows Library/Tracker",
         "project-live": "TV-Show-Library/",
-        "project-preview": "../src/assets/screenshots/TVTracker.png",
-        "project-preview-mobile": "../src/assets/screenshots/TVTracker_m.jpg",
+        "project-preview": "public/TVTracker.png",
+        "project-preview-mobile": "public/TVTracker_m.jpg",
     },
 ];
 
