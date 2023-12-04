@@ -6,9 +6,16 @@ const Contact = React.forwardRef((props, ref) => {
             <h1>
                 Contact Info
             </h1>
-            <div className="contact-info">
-                <a href="mailto:MostafaWael1987@gmail.com">E-mail</a>
-                <a href="https://github.com/MostafaSaad1987">GitHub</a>
+            <div className="contact-content">
+                <div className="contact-item">
+                    <p className="contact-title">E-mail</p>
+                    <p className="contact-info">MostafaWael1987@gmail.com</p>
+                </div>
+
+                <div className="contact-item">
+                    <p className="contact-title">GitHub</p>
+                    <p className="contact-info">https://github.com/MostafaSaad1987</p>
+                </div>
             </div>
         </div>
     );

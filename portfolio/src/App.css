@@ -17,7 +17,8 @@
 
 header,
 .skills-container,
-.projects {
+.projects,
+.contact {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -125,39 +126,6 @@ header>h6 {
   grid-column: 1 / -1;
 }
 
-.contact {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  margin: 0;
-}
-
-.contact-info {
-  height: 75%;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.contact-info>a {
-  border-radius: 10%;
-  padding: 25px;
-}
-
-.contact-info>:first-child {
-  border-radius: 25px 25px;
-  border-top-left-radius: 0;
-}
-
-.contact-info>:last-child {
-  border-radius: 25px 0 25px 25px;
-  border-top-right-radius: 0;
-}
-
 .project-image {
   object-fit: contain;
   width: 50%;
@@ -205,14 +173,53 @@ header>h6 {
   border: 2px solid black;
 }
 
-.contact-info>a:hover {
-  border-radius: 10%;
-  color: white;
-  background-color: black;
-}
-
 .hidden {
   opacity: 0;
+}
+
+.contact-content {
+  width: 100vw;
+}
+
+.contact-content {
+  gap: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  width: 80%;
+  border: black 5px solid;
+  padding: 0 10px;
+
+  position: relative;
+
+  background-color: #2288FF;
+  color: white;
+
+  transition: all 0.5s;
+}
+
+.contact-item:hover {
+  width: 90%;
+}
+
+.contact-title {
+  margin-top: 0.5em;
+  font-size: 2rem;
+  text-align: left;
+
+  font-family: 'Oswald', sans-serif;
+}
+
+.contact-info {
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 2rem;
+  font-family: 'PT Serif', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -238,6 +245,10 @@ header>h6 {
   .skills-container,
   .projects {
     height: auto;
+  }
+
+  .contact-info {
+    font-size: 1.2rem;
   }
 }
 
