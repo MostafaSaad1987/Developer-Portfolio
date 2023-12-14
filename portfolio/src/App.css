@@ -148,6 +148,7 @@ header>h6 {
 }
 
 .projects-buttons {
+  z-index: 999;
   margin-top: 2%;
 }
 
