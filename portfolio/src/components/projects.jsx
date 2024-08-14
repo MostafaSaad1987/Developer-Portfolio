@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import restaurantImage from "../assets/images/Restaurant.webp";
+import restaurantMobileImage from "../assets/images/Restaurant_m.webp";
+import tvTrackerImage from "../assets/images/TVTracker.webp";
+import tvTrackerMobileImage from "../assets/images/TVTracker_m.webp";
 
 const githubLink = "https://github.com/MostafaSaad1987/";
 const liveGithubLink = "https://mostafasaad1987.github.io/";
@@ -9,16 +13,16 @@ const Projects = [
         skills: "HTML, CSS, JS, Webpack",
         "project-name": "Restaurant Page",
         "project-live": "odin-restaurant-page/",
-        "project-preview": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/Restaurant.png",
-        "project-preview-mobile": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/Restaurant_m.jpg",
+        "project-preview": restaurantImage,
+        "project-preview-mobile": restaurantMobileImage,
     },
     {
         text: "A website to track all the shows that you watch. (Or at least the ones that are available TVMaze.)",
         skills: "HTML, CSS, JS, Axios",
         "project-name": "TV Shows Library/Tracker",
         "project-live": "TV-Show-Library/",
-        "project-preview": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/TVTracker.png",
-        "project-preview-mobile": "https://raw.githubusercontent.com/MostafaSaad1987/Developer-Portfolio/7944a4075b0a9c8de32368ebe8d90961f9616f0d/TVTracker_m.jpg",
+        "project-preview": tvTrackerImage,
+        "project-preview-mobile": tvTrackerMobileImage,
     },
 ];
 
