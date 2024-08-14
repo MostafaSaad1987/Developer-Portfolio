@@ -3,15 +3,8 @@ import React from "react";
 
 const Nav = ({ skillsRef, projectsRef, contactRef, homeRef }) => {
     const handleClick = (section) => {
-        if (section === "skills") {
-            skillsRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else if (section === "projects") {
-            projectsRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else if (section === "contact") {
-            contactRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else if (section === "home") {
-            homeRef.current?.scrollIntoView({ behavior: "smooth" });
-        }
+        const refs = { skills: skillsRef, projects: projectsRef, contact: contactRef, home: homeRef };
+        refs[section].current?.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <nav className="move">

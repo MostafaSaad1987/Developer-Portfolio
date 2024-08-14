@@ -24,7 +24,7 @@ const Projects = [
 
 const Project = React.forwardRef((props, ref) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [currentProject, setProjectState] = useState(Projects[currentIndex]);
+    const currentProject = Projects[currentIndex];
     const [projectClass, setProjectClass] = useState("");
 
     const handleClick = (event) => {
@@ -33,7 +33,6 @@ const Project = React.forwardRef((props, ref) => {
         setTimeout(() => {
             const newIndex = (currentIndex + 1) % Projects.length;
             setCurrentIndex(newIndex);
-            setProjectState(Projects[newIndex]);
             setProjectClass("");
         }, 250);
     };
@@ -44,7 +43,6 @@ const Project = React.forwardRef((props, ref) => {
         setTimeout(() => {
             const newIndex = (currentIndex - 1 + Projects.length) % Projects.length;
             setCurrentIndex(newIndex);
-            setProjectState(Projects[newIndex]);
             setProjectClass("");
         }, 250);
     };
@@ -60,8 +58,8 @@ const Project = React.forwardRef((props, ref) => {
                 </div>
                 <p className="project-text">{currentProject.text}</p>
                 <p className="project-skills">{currentProject.skills}</p>
-                <img className="project-image" src={projectClass === "hidden" ? "" : currentProject["project-preview"]} alt="Project Preview" />
-                <img className="project-mobile-image" src={projectClass === "hidden" ? "" : currentProject["project-preview-mobile"]} alt="Project Preview" />
+                <img className="project-image" src={currentProject["project-preview"]} alt="Project Preview" loading="lazy" />
+                <img className="project-mobile-image" src={currentProject["project-preview-mobile"]} alt="Project Preview" loading="lazy" />
             </div>
             <div className="projects-buttons">
                 <button onClick={handleBackClick}>Previous Project</button>
@@ -70,6 +68,5 @@ const Project = React.forwardRef((props, ref) => {
         </div>
     );
 });
-
 
 export default Project;
