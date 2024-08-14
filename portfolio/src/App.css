@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 60px;
 }
 
 #root>* {
@@ -57,13 +58,15 @@ header>h6 {
 }
 
 .move {
-  position: sticky;
-  bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   background-color: #3d3d3d;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 1000;
 
   animation-name: growToFrame;
   animation-duration: 1s;
