@@ -129,17 +129,26 @@ header>h6 {
   grid-column: 1 / -1;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-image {
   object-fit: contain;
   width: 50%;
   border: 0.5rem solid black;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.project-mobile-image {
+  width: 125px;
+  position: absolute;
+  right: 26%;
+  bottom: 10%;
+  border-radius: 4%;
+  border: 2px solid black;
 }
 
 .projects-buttons,
@@ -166,15 +175,6 @@ header>h6 {
 
 .project-skills {
   font-weight: 800;
-}
-
-.project-mobile-image {
-  width: 125px;
-  position: absolute;
-  right: 26%;
-  bottom: 10%;
-  border-radius: 4%;
-  border: 2px solid black;
 }
 
 .hidden {
