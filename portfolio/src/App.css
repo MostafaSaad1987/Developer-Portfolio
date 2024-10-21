@@ -47,16 +47,6 @@ header>h2 {
   animation-name: slideDown;
 }
 
-header>h6 {
-  margin-top: 0;
-
-  animation-duration: 2.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-name: slideDown;
-}
-
 .move {
   position: fixed;
   top: 0;
